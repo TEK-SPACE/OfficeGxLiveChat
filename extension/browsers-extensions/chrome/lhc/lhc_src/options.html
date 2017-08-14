@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Live Helper Chat extension option</title>
+<script src="options.js"></script>
+<script src="options_options.js"></script>
+</head>
+
+<body>
+<label><b>Please enter URL where Live Helper Chat is installed (without ending slash):</b></label>
+<div><input placeholder="E.g http://demo.livehelprchat.com" type="text" id="lhcinstallpath" value="" style="width:100%"></div>
+<br/>
+<div><b>Login information (optional)</b></div>
+
+<label>Username:</label>
+<div><input type="text" id="lhcusername" value="" style="width:100%"></div>
+
+<label>Password:</label>
+<div><input type="password" id="lhcpassword" value="" style="width:100%"></div>
+<br/>
+<div><b>Automatic offline/online</b></div>
+
+<div>
+<label><input type="checkbox" id="lhc_autostatus" > automatically change my status to offline/online</label>
+</div>
+
+<label>Inactivity timeout, minimum 15 seconds:</label>
+<div><input type="int" id="lhc_offlinetimeout" value="15" style="width:100%" ></div>
+
+<br>
+<div id="status"></div>
+<button id="save">Save</button>
+</body>
+
+</html>
